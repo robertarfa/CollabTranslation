@@ -12,7 +12,6 @@ import logo from '../../assets/logo.svg';
 const Menu = () => {
   return (
     <main>
-      {/* <section className={css.menuSection}> */}
       <section>
         <Row className={css.menuDiv}>
           <Col xs={3}>
@@ -21,34 +20,28 @@ const Menu = () => {
             </header>
           </Col>
 
-          {/* <div className={css.menuDiv}> */}
-          <Col lg={true}>
-            <Navbar>
-              <Nav className="mr-auto">
+          <Col sm={true}>
+            <Navbar expand="sm">
+              <Nav className="xs-auto">
                 <Nav.Link className={css.link} href="/">
-                  Home
+                  Home /
                 </Nav.Link>
-                <span>/</span>
 
                 <Nav.Link className={css.link} href="/Services">
-                  Services
+                  Services /
                 </Nav.Link>
-                <span>/</span>
 
                 <Nav.Link className={css.link} href="/Prices">
-                  Prices & Combos{' '}
+                  Prices & Combos /
                 </Nav.Link>
-                <span>/</span>
 
                 <Nav.Link className={css.link} href="/AboutUs">
-                  About Us
+                  About Us /
                 </Nav.Link>
-                <span>/</span>
 
                 <Nav.Link className={css.link} href="/Associations">
-                  Associations & Certificates
+                  Associations & Certificates /
                 </Nav.Link>
-                <span>/</span>
 
                 <Nav.Link className={css.link} href="/Terms">
                   Terms & Conditions
