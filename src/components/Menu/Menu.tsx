@@ -1,51 +1,62 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import css from './menu.module.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import { Col, Row } from 'react-bootstrap';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 
 import logo from '../../assets/logo.svg';
-
-// function handleClick(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
-//   event.preventDefault()
-// }
 
 const Menu = () => {
   return (
     <main>
-      <section className={css.menuSection}>
-        <header className={css.logoDiv}>
-          <img src={logo} alt="CollabTranslation" />
-        </header>
+      {/* <section className={css.menuSection}> */}
+      <section>
+        <Row className={css.menuDiv}>
+          <Col xs={3}>
+            <header className={css.logoDiv}>
+              <img src={logo} alt="CollabTranslation" />
+            </header>
+          </Col>
 
-        <div className={css.menuDiv}>
-          <Link className={css.link} to="/">
-            Home
-          </Link>
-          <span>/</span>
+          {/* <div className={css.menuDiv}> */}
+          <Col lg={true}>
+            <Navbar>
+              <Nav className="mr-auto">
+                <Nav.Link className={css.link} href="/">
+                  Home
+                </Nav.Link>
+                <span>/</span>
 
-          <Link className={css.link} to="/Services">
-            Services
-          </Link>
-          <span>/</span>
+                <Nav.Link className={css.link} href="/Services">
+                  Services
+                </Nav.Link>
+                <span>/</span>
 
-          <Link className={css.link} to="/Prices">
-            Prices & Combos
-          </Link>
-          <span>/</span>
+                <Nav.Link className={css.link} href="/Prices">
+                  Prices & Combos{' '}
+                </Nav.Link>
+                <span>/</span>
 
-          <Link className={css.link} to="/AboutUs">
-            About Us
-          </Link>
-          <span>/</span>
+                <Nav.Link className={css.link} href="/AboutUs">
+                  About Us
+                </Nav.Link>
+                <span>/</span>
 
-          <Link className={css.link} to="/Associations">
-            Associations & Centificates
-          </Link>
-          <span>/</span>
+                <Nav.Link className={css.link} href="/Associations">
+                  Associations & Certificates
+                </Nav.Link>
+                <span>/</span>
 
-          <Link className={css.link} to="/Terms">
-            Terms & Conditions
-          </Link>
-        </div>
+                <Nav.Link className={css.link} href="/Terms">
+                  Terms & Conditions
+                </Nav.Link>
+              </Nav>
+            </Navbar>
+          </Col>
+        </Row>
       </section>
     </main>
   );
