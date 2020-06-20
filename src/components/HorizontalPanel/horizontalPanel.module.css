@@ -1,12 +1,10 @@
 .homeContainer {
-  height: 50vh;
-  /* background: url('../../assets/laptop.jpeg') 0 -300px; */
+  background: url('../../assets/laptop.jpeg') 0 -300px;
   background-size: 100%;
-  height: 60vh;
   text-align: center;
   opacity: 0.9;
   color: white;
-  box-sizing: border-box;
+  padding: 10px;
 }
 
 .homeContainer h1:first-child {
