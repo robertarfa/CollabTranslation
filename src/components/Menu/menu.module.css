@@ -1,15 +1,5 @@
 .logoDiv img {
   width: 200px;
-  margin: 0 50px 20px 80px;
+  margin: 0 40px 2% 1%;
   padding: 1%;
-}
-
-.menuDiv {
-  display: flex;
-  align-items: center;
-  margin: 1% 0 0 0;
-}
-
-.menuDiv .link {
-  font-weight: 700;
 }

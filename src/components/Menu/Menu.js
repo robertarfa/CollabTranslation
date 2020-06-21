@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 import css from './menu.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -8,11 +7,12 @@ import Nav from 'react-bootstrap/Nav';
 
 import logo from '../../assets/logo.svg';
 
-const Menu = () => {
+export default function Menu() {
   return (
+
     <main>
       <section>
-        <Navbar expand="md">
+        <Navbar expand="md" className={css.divMenu}>
           <Navbar.Brand>
             <header className={css.logoDiv}>
               <img src={logo} alt="CollabTranslation" />
@@ -22,7 +22,10 @@ const Menu = () => {
           <Navbar.Toggle />
           <Navbar.Collapse>
             <Nav className="xs-auto">
-              <Nav.Link className={css.link} href="/">
+              <Nav.Link
+                className={css.link}
+                href="/"
+              >
                 Home /
               </Nav.Link>
 
@@ -50,7 +53,8 @@ const Menu = () => {
         </Navbar>
       </section>
     </main>
+
   );
 };
 
-export default Menu;
+
