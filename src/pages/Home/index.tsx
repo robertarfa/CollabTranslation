@@ -3,8 +3,9 @@ import css from './styles.module.css';
 import Menu from '../../components/Menu/Menu';
 import HorizontalPanel from '../../components/HorizontalPanel/HorizontalPanel';
 import VerticalPanels from '../../components/VerticalPanels/VerticalPanels';
+import { HomeCarousel } from '../../components/HomeCarousel/HomeCarousel';
 
-const Home = () => {
+export default function Home() {
   return (
     <div>
       <Menu />
@@ -53,8 +54,8 @@ const Home = () => {
           linkPage="/"
         />
       </div>
+
+      <HomeCarousel />
     </div>
   );
-};
-
-export default Home;
+}
