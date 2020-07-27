@@ -2,11 +2,11 @@ import React from 'react'
 import css from './verticalPanelsV2.module.css'
 
 export default function VerticalPanelsV2(props: {
-  titleCard: any
-  paragraph: any
-  backgroudColor: any
-  iconColor: any
-  icon: any
+  titleCard: string
+  paragraph: string
+  backgroudColor: string
+  iconColor: string
+  icon: string
 }) {
   const { titleCard, paragraph, backgroudColor, iconColor, icon } = props
 

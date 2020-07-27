@@ -27,7 +27,7 @@
 @media (max-width: 600px) {
   .homeContainer {
     background: url('../../assets/laptopQ.jpeg') 0 -300px no-repeat;
-    background-size: 100% 250%;
+    background-size: 100% 200%;
     text-align: center;
     opacity: 0.9;
     color: white;
