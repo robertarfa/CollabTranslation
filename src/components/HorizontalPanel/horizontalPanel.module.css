@@ -23,3 +23,14 @@
   font-weight: bold;
   background-color: #ff9a00;
 }
+
+@media (max-width: 600px) {
+  .homeContainer {
+    background: url('../../assets/laptopQ.jpeg') 0 -300px no-repeat;
+    background-size: 100% 250%;
+    text-align: center;
+    opacity: 0.9;
+    color: white;
+    padding: 10px;
+  }
+}
